@@ -42,8 +42,6 @@
     
     [self.tabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
-    //committing third time
-    NSArray *arr;
     
     NSManagedObjectContext *context=[self managedObjectContext];
     
@@ -52,7 +50,6 @@
     [request setEntity:description];
     NSError *error;
     employeeDetails=[[context executeFetchRequest:request error:&error] mutableCopy];
-    //fouth commit
     
 
 }
