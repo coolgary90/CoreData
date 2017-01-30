@@ -50,6 +50,7 @@
     [request setEntity:description];
     NSError *error;
     employeeDetails=[[context executeFetchRequest:request error:&error] mutableCopy];
+    //fouth commit
     
 
 }
@@ -97,10 +98,10 @@
 {
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"CELL"];
     
-    if(cell == nil)
+    if(cell==nil)
     {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CELL"];
-        // allocating cell
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CELL"];
+        
     }
     NSManagedObject *employeeDetailsManagedObj=[employeeDetails objectAtIndex:indexPath.row];
     
