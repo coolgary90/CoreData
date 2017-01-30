@@ -97,10 +97,10 @@
 {
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"CELL"];
     
-    if(cell==nil)
+    if(cell == nil)
     {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CELL"];
-        
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CELL"];
+        // allocating cell
     }
     NSManagedObject *employeeDetailsManagedObj=[employeeDetails objectAtIndex:indexPath.row];
     
