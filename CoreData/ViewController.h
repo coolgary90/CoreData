@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak,nonatomic) IBOutlet UITextField *UITextFieldName;
+@property (weak,nonatomic) IBOutlet UITextField *UITextFieldContactNo;
+@property (weak,nonatomic) IBOutlet UITextField *UITextFieldAddress;
+
+
+
 
 
 @end

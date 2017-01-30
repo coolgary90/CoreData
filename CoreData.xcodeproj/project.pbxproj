@@ -16,6 +16,10 @@
 		E74098621E3F0DBB007C7800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74098601E3F0DBB007C7800 /* LaunchScreen.storyboard */; };
 		E740986D1E3F0DBC007C7800 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E740986C1E3F0DBC007C7800 /* CoreDataTests.m */; };
 		E74098781E3F0DBC007C7800 /* CoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E74098771E3F0DBC007C7800 /* CoreDataUITests.m */; };
+		E74098871E3F0E2D007C7800 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74098861E3F0E2D007C7800 /* CoreData.framework */; };
+		E740988A1E3F1457007C7800 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74098891E3F1457007C7800 /* SecondViewController.m */; };
+		E740988B1E3F1457007C7800 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74098891E3F1457007C7800 /* SecondViewController.m */; };
+		E740988C1E3F1457007C7800 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74098891E3F1457007C7800 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,9 @@
 		E74098731E3F0DBC007C7800 /* CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74098771E3F0DBC007C7800 /* CoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataUITests.m; sourceTree = "<group>"; };
 		E74098791E3F0DBC007C7800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74098861E3F0E2D007C7800 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E74098881E3F1457007C7800 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E74098891E3F1457007C7800 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74098871E3F0E2D007C7800 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +95,7 @@
 				E740986B1E3F0DBC007C7800 /* CoreDataTests */,
 				E74098761E3F0DBC007C7800 /* CoreDataUITests */,
 				E740984D1E3F0DBB007C7800 /* Products */,
+				E74098851E3F0E2D007C7800 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +116,8 @@
 				E74098531E3F0DBB007C7800 /* AppDelegate.m */,
 				E74098551E3F0DBB007C7800 /* ViewController.h */,
 				E74098561E3F0DBB007C7800 /* ViewController.m */,
+				E74098881E3F1457007C7800 /* SecondViewController.h */,
+				E74098891E3F1457007C7800 /* SecondViewController.m */,
 				E74098581E3F0DBB007C7800 /* Main.storyboard */,
 				E740985E1E3F0DBB007C7800 /* Assets.xcassets */,
 				E74098601E3F0DBB007C7800 /* LaunchScreen.storyboard */,
@@ -141,6 +152,14 @@
 				E74098791E3F0DBC007C7800 /* Info.plist */,
 			);
 			path = CoreDataUITests;
+			sourceTree = "<group>";
+		};
+		E74098851E3F0E2D007C7800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E74098861E3F0E2D007C7800 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E740988A1E3F1457007C7800 /* SecondViewController.m in Sources */,
 				E740985D1E3F0DBB007C7800 /* CoreData.xcdatamodeld in Sources */,
 				E74098571E3F0DBB007C7800 /* ViewController.m in Sources */,
 				E74098541E3F0DBB007C7800 /* AppDelegate.m in Sources */,
@@ -287,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E740988B1E3F1457007C7800 /* SecondViewController.m in Sources */,
 				E740986D1E3F0DBC007C7800 /* CoreDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E740988C1E3F1457007C7800 /* SecondViewController.m in Sources */,
 				E74098781E3F0DBC007C7800 /* CoreDataUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
