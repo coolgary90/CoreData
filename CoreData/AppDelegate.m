@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UILocalNotification *localNotification=[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    
+    if(localNotification)
+    {
+        application.applicationIconBadgeNumber=1;
+        
+    }
+    
+    if([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound categories:nil]];
+        
+        
+    }
+    
     return YES;
 }
 
@@ -48,7 +64,36 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    
+    
+    UIApplicationState state=[application applicationState];
+    
+    if(state==UIApplicationStateInactive)
+    {
+        UIStoryboard *stoaryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        ViewController *viewController=[stoaryBoard instantiateViewControllerWithIdentifier:@"FirstView"];
+        
+        UINavigationController *navigationController=[[UINavigationController alloc]initWithRootViewController:viewController];
+        
+        [self.window.rootViewController presentViewController:navigationController animated:YES completion:nil];
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"LocalNotification" object:nil];
 
+        
+                                        
+        
+        
+    }
+    else if (state==UIApplicationStateActive)
+    {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"LocalNotification" object:nil];
+        
+    }
+
+    
+    
+}
 
 #pragma mark - Core Data stack
 

@@ -20,6 +20,8 @@
 		E740988A1E3F1457007C7800 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74098891E3F1457007C7800 /* SecondViewController.m */; };
 		E740988B1E3F1457007C7800 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74098891E3F1457007C7800 /* SecondViewController.m */; };
 		E740988C1E3F1457007C7800 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74098891E3F1457007C7800 /* SecondViewController.m */; };
+		E74098941E3F5DFF007C7800 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74098921E3F5DFF007C7800 /* UserNotifications.framework */; };
+		E74098951E3F5DFF007C7800 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74098931E3F5DFF007C7800 /* UserNotificationsUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		E74098861E3F0E2D007C7800 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E74098881E3F1457007C7800 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		E74098891E3F1457007C7800 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E74098921E3F5DFF007C7800 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		E74098931E3F5DFF007C7800 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74098941E3F5DFF007C7800 /* UserNotifications.framework in Frameworks */,
+				E74098951E3F5DFF007C7800 /* UserNotificationsUI.framework in Frameworks */,
 				E74098871E3F0E2D007C7800 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +163,8 @@
 		E74098851E3F0E2D007C7800 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E74098921E3F5DFF007C7800 /* UserNotifications.framework */,
+				E74098931E3F5DFF007C7800 /* UserNotificationsUI.framework */,
 				E74098861E3F0E2D007C7800 /* CoreData.framework */,
 			);
 			name = Frameworks;
@@ -451,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MF.CoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MF.CoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
